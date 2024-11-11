@@ -2,6 +2,7 @@ package TD2016;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 public class Exo1 {
@@ -14,8 +15,9 @@ public class Exo1 {
 
         // Affichage de la liste
         System.out.println("Affichage de ma collection:");
-        for (String element : list) {
-            System.out.println(element);
+        ListIterator listIterateur = list.listIterator();
+        while (listIterateur.hasNext()) {
+            System.out.println(listIterateur.next());
         }
 
         // Recherche d'une chaîne
